@@ -1,6 +1,10 @@
+import os
+
+
 def main():
-    for i in range(1,21):
-        print(f"{i}. Hola Mundo")
+    nombre = os.getenv("USERNAME")
+    print(f"¡Hola, {nombre} desde GitHub!")
+
 
 if __name__ == "__main__":
     main()
